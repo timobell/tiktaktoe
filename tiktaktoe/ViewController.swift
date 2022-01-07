@@ -33,6 +33,7 @@ class ViewController: UIViewController {
     
     
     var klick = true
+    // Beispiel Kommentar
     
     func updatelabel() {
         if klick {
