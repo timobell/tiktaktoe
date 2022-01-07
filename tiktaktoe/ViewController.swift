@@ -36,8 +36,10 @@ class ViewController: UIViewController {
     func updatelabel() {
         if klick {
             erklärungstext.text = "X ist am Zug"
+            erklärungstext.textColor = .black
         } else {
             erklärungstext.text = "O ist am Zug"
+            erklärungstext.textColor = .black
         }
     }
     
@@ -182,6 +184,7 @@ class ViewController: UIViewController {
         label7.text = ""
         label8.text = ""
         label9.text = ""
+        erklärungstext.text = ""
     }
     
     @IBAction func xbutton(_ sender: UIButton) {
