@@ -36,6 +36,9 @@ class ViewController: UIViewController {
     
     var klick = true
     var imagek = true
+    var letzterbutton = 0
+    
+//    0 -> String(0) -> "0"
     
     func updatelabel() {
         if klick {
@@ -82,6 +85,7 @@ class ViewController: UIViewController {
                     label1.textAlignment = .center
                     klick = true
                 }
+                letzterbutton = 1
             }
         } else if sender == button2label {
             if label2.text == "" {
@@ -96,6 +100,7 @@ class ViewController: UIViewController {
                         label2.textAlignment = .center
                         klick = true
                 }
+                letzterbutton = 2
             }
         } else if sender == button3label {
             if label3.text == "" {
@@ -110,6 +115,7 @@ class ViewController: UIViewController {
                     label3.textAlignment = .center
                     klick = true
                 }
+                letzterbutton = 3
             }
         } else if sender == button4label{
             if label4.text == "" {
@@ -124,6 +130,7 @@ class ViewController: UIViewController {
                     label4.textAlignment = .center
                     klick = true
                 }
+                letzterbutton = 4
             }
         } else if sender == button5label {
             if label5.text == "" {
@@ -138,6 +145,7 @@ class ViewController: UIViewController {
                     label5.textAlignment = .center
                     klick = true
                 }
+                letzterbutton = 5
             }
         } else if sender == button6label {
             if label6.text == "" {
@@ -152,6 +160,7 @@ class ViewController: UIViewController {
                     label6.textAlignment = .center
                     klick = true
                 }
+                letzterbutton = 6
             }
         } else if sender == button7label {
             if label7.text == "" {
@@ -166,6 +175,7 @@ class ViewController: UIViewController {
                     label7.textAlignment = .center
                     klick = true
                 }
+                letzterbutton = 7
             }
         } else if sender == button8label {
             if label8.text == "" {
@@ -180,6 +190,7 @@ class ViewController: UIViewController {
                     label8.textAlignment = .center
                     klick = true
                 }
+                letzterbutton = 8
             }
         } else if sender == button9label {
             if label9.text == "" {
@@ -194,6 +205,7 @@ class ViewController: UIViewController {
                     label9.textAlignment = .center
                     klick = true
                 }
+                letzterbutton = 9
             }
         }
         
@@ -213,6 +225,44 @@ class ViewController: UIViewController {
         label9.text = ""
         erklärungstext.text = ""
         er2.text = ""
+    }
+    @IBAction func zurück(_ sender: UIButton) {
+        if letzterbutton == 1 {
+            label1.text = ""
+        }
+        if letzterbutton == 2 {
+            label2.text = ""
+        }
+        if letzterbutton == 3 {
+            label3.text = ""
+        }
+        if letzterbutton == 4 {
+            label4.text = ""
+        }
+        if letzterbutton == 5 {
+            label5.text = ""
+        }
+        if letzterbutton == 6 {
+            label6.text = ""
+        }
+        if letzterbutton == 7 {
+            label7.text = ""
+        }
+        if letzterbutton == 8 {
+            label8.text = ""
+        }
+        if letzterbutton == 9 {
+            label9.text = ""
+        }
+        if letzterbutton != 0 {
+            if klick {
+                klick = false
+            } else {
+                klick = true
+            }
+            letzterbutton = 0
+            updatelabel()
+        }
     }
     
     @IBAction func xbutton(_ sender: UIButton) {
@@ -238,7 +288,7 @@ class ViewController: UIViewController {
     @IBAction func wierd(_ sender: UIButton) {
         imagechanger.image = UIImage(named: "IMG_FEA8BF72405C-1")
     }
-    @IBAction func `in`(_ sender: UIButton) {
+    @IBAction func styleButtonIn(_ sender: UIButton) {
         imagechanger.image = UIImage(named: "IMG_93FEEC47152D-1")
     }
     
