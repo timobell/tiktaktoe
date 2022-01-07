@@ -34,6 +34,14 @@ class ViewController: UIViewController {
     
     var klick = true
     
+    func updatelabel() {
+        if klick {
+            erklaärungslabel.text = "X ist am Zug"
+        } else {
+            erklaärungslabel.text = "O ist am Zug"
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tttlabel.text = "TikTakToe"
@@ -50,6 +58,7 @@ class ViewController: UIViewController {
         button9label.setTitle("", for: .normal)
         
     }
+    
     @IBAction func button1(_ sender: UIButton) {
         if klick {
             label1.text = "X"
@@ -62,7 +71,9 @@ class ViewController: UIViewController {
             label1.textAlignment = .center
             klick = true
         }
+        updatelabel()
     }
+    
     @IBAction func button2(_ sender: UIButton) {
         if klick {
             label2.text = "X"
@@ -75,7 +86,9 @@ class ViewController: UIViewController {
             label2.textAlignment = .center
             klick = true
         }
+        updatelabel()
     }
+    
     @IBAction func button3(_ sender: UIButton) {
         if klick {
             label3.text = "X"
@@ -88,7 +101,9 @@ class ViewController: UIViewController {
             label3.textAlignment = .center
             klick = true
         }
+        updatelabel()
     }
+    
     @IBAction func button4(_ sender: UIButton) {
         if klick {
             label4.text = "X"
@@ -101,7 +116,9 @@ class ViewController: UIViewController {
             label4.textAlignment = .center
             klick = true
         }
+        updatelabel()
     }
+    
     @IBAction func button5(_ sender: UIButton) {
         if klick {
             label5.text = "X"
@@ -114,7 +131,9 @@ class ViewController: UIViewController {
             label5.textAlignment = .center
             klick = true
         }
+        updatelabel()
     }
+    
     @IBAction func button6(_ sender: UIButton) {
         if klick {
             label6.text = "X"
@@ -127,7 +146,9 @@ class ViewController: UIViewController {
             label6.textAlignment = .center
             klick = true
         }
+        updatelabel()
     }
+    
     @IBAction func button7(_ sender: UIButton) {
         if klick {
             label7.text = "X"
@@ -140,7 +161,9 @@ class ViewController: UIViewController {
             label7.textAlignment = .center
             klick = true
         }
+        updatelabel()
     }
+    
     @IBAction func button8(_ sender: UIButton) {
         if klick {
             label8.text = "X"
@@ -153,7 +176,9 @@ class ViewController: UIViewController {
             label8.textAlignment = .center
             klick = true
         }
+        updatelabel()
     }
+    
     @IBAction func button9(_ sender: UIButton) {
         if klick {
             label9.text = "X"
@@ -166,7 +191,9 @@ class ViewController: UIViewController {
             label9.textAlignment = .center
             klick = true
         }
+        updatelabel()
     }
+    
     @IBAction func reset(_ sender: UIButton) {
         klick = true
         label1.text = ""
@@ -179,9 +206,11 @@ class ViewController: UIViewController {
         label8.text = ""
         label9.text = ""
     }
+    
     @IBAction func xbutton(_ sender: UIButton) {
         klick = true
     }
+    
     @IBAction func obutton(_ sender: UIButton) {
         klick = false
     }
