@@ -29,6 +29,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var label8: UILabel!
     @IBOutlet weak var label9: UILabel!
     
+    @IBOutlet weak var erklaärungslabel: UILabel!
+    
+    
     var klick = true
     
     override func viewDidLoad() {
@@ -48,7 +51,6 @@ class ViewController: UIViewController {
         
     }
     @IBAction func button1(_ sender: UIButton) {
-        button1label.setTitle( "", for: .normal)
         if klick {
             label1.text = "X"
             label1.textColor = .red
@@ -62,7 +64,6 @@ class ViewController: UIViewController {
         }
     }
     @IBAction func button2(_ sender: UIButton) {
-        button2label.setTitle("", for: .normal)
         if klick {
             label2.text = "X"
             label2.textColor = .red
@@ -76,7 +77,6 @@ class ViewController: UIViewController {
         }
     }
     @IBAction func button3(_ sender: UIButton) {
-        button3label.setTitle("", for: .normal)
         if klick {
             label3.text = "X"
             label3.textColor = .red
@@ -90,7 +90,6 @@ class ViewController: UIViewController {
         }
     }
     @IBAction func button4(_ sender: UIButton) {
-        button4label.setTitle("", for: .normal)
         if klick {
             label4.text = "X"
             label4.textColor = .red
@@ -104,7 +103,6 @@ class ViewController: UIViewController {
         }
     }
     @IBAction func button5(_ sender: UIButton) {
-        button5label.setTitle("", for: .normal)
         if klick {
             label5.text = "X"
             label5.textColor = .red
@@ -118,7 +116,6 @@ class ViewController: UIViewController {
         }
     }
     @IBAction func button6(_ sender: UIButton) {
-        button6label.setTitle("", for: .normal)
         if klick {
             label6.text = "X"
             label6.textColor = .red
@@ -132,7 +129,6 @@ class ViewController: UIViewController {
         }
     }
     @IBAction func button7(_ sender: UIButton) {
-        button7label.setTitle("", for: .normal)
         if klick {
             label7.text = "X"
             label7.textColor = .red
@@ -146,7 +142,6 @@ class ViewController: UIViewController {
         }
     }
     @IBAction func button8(_ sender: UIButton) {
-        button8label.setTitle("", for: .normal)
         if klick {
             label8.text = "X"
             label8.textColor = .red
@@ -160,7 +155,6 @@ class ViewController: UIViewController {
         }
     }
     @IBAction func button9(_ sender: UIButton) {
-        button9label.setTitle("", for: .normal)
         if klick {
             label9.text = "X"
             label9.textColor = .red
@@ -184,6 +178,12 @@ class ViewController: UIViewController {
         label7.text = ""
         label8.text = ""
         label9.text = ""
+    }
+    @IBAction func xbutton(_ sender: UIButton) {
+        klick = true
+    }
+    @IBAction func obutton(_ sender: UIButton) {
+        klick = false
     }
     
 
