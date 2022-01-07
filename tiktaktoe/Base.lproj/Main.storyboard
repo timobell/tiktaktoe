@@ -231,7 +231,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="gray" title="Zack">
+                                        <buttonConfiguration key="configuration" style="gray" title="Atom">
                                             <fontDescription key="titleFontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="30"/>
                                         </buttonConfiguration>
                                         <connections>
@@ -286,29 +286,6 @@
                                             <action selector="styleButtonIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QwL-NU-3ST"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ul6-QX-eX8">
-                                        <rect key="frame" x="42" y="1053" width="143" height="89"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="tintColor" systemColor="systemRedColor"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="gray" title="X">
-                                            <fontDescription key="titleFontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="60"/>
-                                        </buttonConfiguration>
-                                        <connections>
-                                            <action selector="xbutton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XlA-y4-1p4"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tbo-O0-kyH">
-                                        <rect key="frame" x="42" y="956" width="143" height="89"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="gray" title="O">
-                                            <fontDescription key="titleFontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="60"/>
-                                        </buttonConfiguration>
-                                        <connections>
-                                            <action selector="obutton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bfG-jI-ciB"/>
-                                        </connections>
-                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qt5-fI-Lcb">
                                         <rect key="frame" x="625" y="956" width="100" height="88"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -334,6 +311,43 @@
                                         <rect key="frame" x="631" y="960" width="89" height="80"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tdH-H6-Swg">
+                                        <rect key="frame" x="38" y="1052" width="130" height="89"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="O">
+                                            <fontDescription key="titleFontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="60"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="obutton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="C48-jJ-Q46"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pjg-uB-PQk">
+                                        <rect key="frame" x="38" y="960" width="130" height="89"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="tintColor" systemColor="systemRedColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="X">
+                                            <fontDescription key="titleFontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="60"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="xbutton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5rB-k6-Vfw"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cjk-Tt-Uze">
+                                        <rect key="frame" x="38" y="1057" width="130" height="84"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="60"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3hF-sR-Tes">
+                                        <rect key="frame" x="38" y="960" width="130" height="84"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="60"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
@@ -358,6 +372,8 @@
                         <outlet property="button7label" destination="h2W-zU-JtQ" id="hdj-Tt-kwD"/>
                         <outlet property="button8label" destination="kEJ-Nf-Wbo" id="5xq-QO-b3O"/>
                         <outlet property="button9label" destination="vBE-cC-LLG" id="mx9-l0-8kY"/>
+                        <outlet property="buttonO" destination="tdH-H6-Swg" id="CjY-5z-TcN"/>
+                        <outlet property="buttonx" destination="Pjg-uB-PQk" id="xLY-Up-Kld"/>
                         <outlet property="er2" destination="f5p-OS-V2f" id="6Hu-Lj-XWj"/>
                         <outlet property="erklärungstext" destination="ZWl-du-nH6" id="Q4l-PL-jPR"/>
                         <outlet property="imagechanger" destination="AaB-3k-oe9" id="8a6-K3-LhI"/>
@@ -370,6 +386,8 @@
                         <outlet property="label7" destination="lmh-YA-ynt" id="6ex-q8-Z58"/>
                         <outlet property="label8" destination="EhX-Lm-3NG" id="v5X-oz-Tw7"/>
                         <outlet property="label9" destination="pPz-dz-hg5" id="3Fl-xX-BTC"/>
+                        <outlet property="labelo" destination="cjk-Tt-Uze" id="Bbo-BK-X7b"/>
+                        <outlet property="labelx" destination="3hF-sR-Tes" id="ktv-PN-yBl"/>
                         <outlet property="tttlabel" destination="RmZ-va-bti" id="s3G-Hu-jvi"/>
                     </connections>
                 </viewController>

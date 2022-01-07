@@ -19,6 +19,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var button8label: UIButton!
     @IBOutlet weak var button9label: UIButton!
     
+    @IBOutlet weak var buttonx: UIButton!
+    @IBOutlet weak var buttonO: UIButton!
+    
+    
     @IBOutlet weak var label1: UILabel!
     @IBOutlet weak var label2: UILabel!
     @IBOutlet weak var label3: UILabel!
@@ -34,12 +38,14 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var imagechanger: UIImageView!
     
+    @IBOutlet weak var labelo: UILabel!
+    @IBOutlet weak var labelx: UILabel!
+    
+    
     var klick = true
     var imagek = true
     var letzterbutton = 0
-    
-//    0 -> String(0) -> "0"
-    
+    var last = 10
     func updatelabel() {
         if klick {
             erklärungstext.text = "ist am Zug"
@@ -68,7 +74,12 @@ class ViewController: UIViewController {
         button7label.setTitle("", for: .normal)
         button8label.setTitle("", for: .normal)
         button9label.setTitle("", for: .normal)
-        
+        labelo.text = "O"
+        labelo.textColor = .blue
+        labelo.textAlignment = .center
+        labelx.text = "X"
+        labelx.textColor = .red
+        labelx.textAlignment = .center
     }
     
     @IBAction func buttonklick(_ sender: UIButton) {
@@ -225,6 +236,13 @@ class ViewController: UIViewController {
         label9.text = ""
         erklärungstext.text = ""
         er2.text = ""
+        last = 10
+        labelo.text = "O"
+        labelo.textColor = .blue
+        labelo.textAlignment = .center
+        labelx.text = "X"
+        labelx.textColor = .red
+        labelx.textAlignment = .center
     }
     @IBAction func zurück(_ sender: UIButton) {
         if letzterbutton == 1 {
@@ -263,21 +281,32 @@ class ViewController: UIViewController {
             letzterbutton = 0
             updatelabel()
         }
+        
     }
     
     @IBAction func xbutton(_ sender: UIButton) {
-        klick = true
+        if last == 10 {
+            klick = true
+            last = 0
+            buttonx.setTitle("", for: .normal)
+            buttonO.setTitle("", for: .normal)
+        }
     }
     
     @IBAction func obutton(_ sender: UIButton) {
-        klick = false
+        if last == 10 {
+            klick = false
+            last = 0
+            buttonx.setTitle("", for: .normal)
+            buttonO.setTitle("", for: .normal)
+        }
     }
 
     @IBAction func normal(_ sender: UIButton) {
         imagechanger.image = UIImage(named: "IMG_436FE5991425-1")
     }
     @IBAction func zack(_ sender: UIButton) {
-        imagechanger.image = UIImage(named: "IMG_DC461C6B58E3-1")
+        imagechanger.image = UIImage(named: "IMG_4FDD1B963812-1")
     }
     @IBAction func kurve(_ sender: UIButton) {
         imagechanger.image = UIImage(named: "IMG_6902D9831170-1")
