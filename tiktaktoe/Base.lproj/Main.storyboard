@@ -246,7 +246,7 @@
                         <outlet property="button7label" destination="h2W-zU-JtQ" id="hdj-Tt-kwD"/>
                         <outlet property="button8label" destination="kEJ-Nf-Wbo" id="5xq-QO-b3O"/>
                         <outlet property="button9label" destination="vBE-cC-LLG" id="mx9-l0-8kY"/>
-                        <outlet property="erklaärungslabel" destination="ZWl-du-nH6" id="Q4l-PL-jPR"/>
+                        <outlet property="erklärungstext" destination="ZWl-du-nH6" id="Q4l-PL-jPR"/>
                         <outlet property="label1" destination="RN5-Q8-yCk" id="jHY-e3-boX"/>
                         <outlet property="label2" destination="Ka0-QC-V4W" id="kzf-gF-61c"/>
                         <outlet property="label3" destination="PTM-P3-vhK" id="uTO-9y-sI1"/>

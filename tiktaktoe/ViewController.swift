@@ -29,16 +29,16 @@ class ViewController: UIViewController {
     @IBOutlet weak var label8: UILabel!
     @IBOutlet weak var label9: UILabel!
     
-    @IBOutlet weak var erklaärungslabel: UILabel!
+    @IBOutlet weak var erklärungstext: UILabel!
     
     
     var klick = true
     
     func updatelabel() {
         if klick {
-            erklaärungslabel.text = "X ist am Zug"
+            erklärungstext.text = "X ist am Zug"
         } else {
-            erklaärungslabel.text = "O ist am Zug"
+            erklärungstext.text = "O ist am Zug"
         }
     }
     
