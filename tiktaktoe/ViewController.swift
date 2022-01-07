@@ -30,6 +30,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var label9: UILabel!
     
     @IBOutlet weak var erklärungstext: UILabel!
+    @IBOutlet weak var er2: UILabel!
     
     @IBOutlet weak var imagechanger: UIImageView!
     
@@ -38,11 +39,15 @@ class ViewController: UIViewController {
     
     func updatelabel() {
         if klick {
-            erklärungstext.text = "X ist am Zug"
+            erklärungstext.text = "ist am Zug"
             erklärungstext.textColor = .black
+            er2.text = "X"
+            er2.textColor = .red
         } else {
-            erklärungstext.text = "O ist am Zug"
+            erklärungstext.text = "ist am Zug"
             erklärungstext.textColor = .black
+            er2.text = "O"
+            er2.textColor = .blue
         }
     }
     
@@ -188,6 +193,7 @@ class ViewController: UIViewController {
         label8.text = ""
         label9.text = ""
         erklärungstext.text = ""
+        er2.text = ""
     }
     
     @IBAction func xbutton(_ sender: UIButton) {

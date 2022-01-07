@@ -26,8 +26,8 @@
                                         <nil key="textColor"/>
                                         <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZWl-du-nH6">
-                                        <rect key="frame" x="8" y="94" width="818" height="273"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ist am Zug" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZWl-du-nH6">
+                                        <rect key="frame" x="373" y="94" width="453" height="273"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="40"/>
                                         <nil key="textColor"/>
@@ -314,6 +314,13 @@
                                             <action selector="in:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ubh-ef-lF5"/>
                                         </connections>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="X" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f5p-OS-V2f">
+                                        <rect key="frame" x="0.0" y="94" width="365" height="273"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="40"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
@@ -338,6 +345,7 @@
                         <outlet property="button7label" destination="h2W-zU-JtQ" id="hdj-Tt-kwD"/>
                         <outlet property="button8label" destination="kEJ-Nf-Wbo" id="5xq-QO-b3O"/>
                         <outlet property="button9label" destination="vBE-cC-LLG" id="mx9-l0-8kY"/>
+                        <outlet property="er2" destination="f5p-OS-V2f" id="6Hu-Lj-XWj"/>
                         <outlet property="erklärungstext" destination="ZWl-du-nH6" id="Q4l-PL-jPR"/>
                         <outlet property="imagechanger" destination="AaB-3k-oe9" id="8a6-K3-LhI"/>
                         <outlet property="label1" destination="RN5-Q8-yCk" id="jHY-e3-boX"/>
