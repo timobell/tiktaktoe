@@ -31,7 +31,10 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var erklärungstext: UILabel!
     
+    @IBOutlet weak var imagechanger: UIImageView!
+    
     var klick = true
+    var imagek = true
     
     func updatelabel() {
         if klick {
@@ -194,4 +197,15 @@ class ViewController: UIViewController {
     @IBAction func obutton(_ sender: UIButton) {
         klick = false
     }
+
+    @IBAction func normal(_ sender: UIButton) {
+        imagechanger.image = UIImage(named: "IMG_436FE5991425-1")
+    }
+    @IBAction func zack(_ sender: UIButton) {
+        imagechanger.image = UIImage(named: "IMG_DC461C6B58E3-1")
+    }
+    @IBAction func kurve(_ sender: UIButton) {
+        imagechanger.image = UIImage(named: "IMG_6902D9831170-1")
+    }
+    
 }
