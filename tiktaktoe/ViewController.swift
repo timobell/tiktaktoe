@@ -31,7 +31,6 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var erklärungstext: UILabel!
     
-    
     var klick = true
     
     func updatelabel() {
