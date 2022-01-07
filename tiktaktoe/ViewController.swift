@@ -70,114 +70,133 @@ class ViewController: UIViewController {
     
     @IBAction func buttonklick(_ sender: UIButton) {
         if sender == button1label {
-            if klick {
-                label1.text = "X"
-                label1.textColor = .red
-                label1.textAlignment = .center
-                klick = false
-            }else {
-                label1.text = "O"
-                label1.textColor = .blue
-                label1.textAlignment = .center
-                klick = true
+            if label1.text == "" {
+                if klick {
+                    label1.text = "X"
+                    label1.textColor = .red
+                    label1.textAlignment = .center
+                    klick = false
+                }else {
+                    label1.text = "O"
+                    label1.textColor = .blue
+                    label1.textAlignment = .center
+                    klick = true
+                }
             }
         } else if sender == button2label {
-            if klick {
-                label2.text = "X"
-                label2.textColor = .red
-                label2.textAlignment = .center
-                klick = false
-            }else {
-                label2.text = "O"
-                label2.textColor = .blue
-                label2.textAlignment = .center
-                klick = true
+            if label2.text == "" {
+                if klick {
+                        label2.text = "X"
+                        label2.textColor = .red
+                        label2.textAlignment = .center
+                        klick = false
+                    }else {
+                        label2.text = "O"
+                        label2.textColor = .blue
+                        label2.textAlignment = .center
+                        klick = true
+                }
             }
         } else if sender == button3label {
-            if klick {
-                label3.text = "X"
-                label3.textColor = .red
-                label3.textAlignment = .center
-                klick = false
-            }else {
-                label3.text = "O"
-                label3.textColor = .blue
-                label3.textAlignment = .center
-                klick = true
+            if label3.text == "" {
+                if klick {
+                    label3.text = "X"
+                    label3.textColor = .red
+                    label3.textAlignment = .center
+                    klick = false
+                }else {
+                    label3.text = "O"
+                    label3.textColor = .blue
+                    label3.textAlignment = .center
+                    klick = true
+                }
             }
         } else if sender == button4label{
-            if klick {
-                label4.text = "X"
-                label4.textColor = .red
-                label4.textAlignment = .center
-                klick = false
-            }else {
-                label4.text = "O"
-                label4.textColor = .blue
-                label4.textAlignment = .center
-                klick = true
+            if label4.text == "" {
+                if klick {
+                    label4.text = "X"
+                    label4.textColor = .red
+                    label4.textAlignment = .center
+                    klick = false
+                }else {
+                    label4.text = "O"
+                    label4.textColor = .blue
+                    label4.textAlignment = .center
+                    klick = true
+                }
             }
         } else if sender == button5label {
-            if klick {
-                label5.text = "X"
-                label5.textColor = .red
-                label5.textAlignment = .center
-                klick = false
-            }else {
-                label5.text = "O"
-                label5.textColor = .blue
-                label5.textAlignment = .center
-                klick = true
+            if label5.text == "" {
+                if klick {
+                    label5.text = "X"
+                    label5.textColor = .red
+                    label5.textAlignment = .center
+                    klick = false
+                }else {
+                    label5.text = "O"
+                    label5.textColor = .blue
+                    label5.textAlignment = .center
+                    klick = true
+                }
             }
         } else if sender == button6label {
-            if klick {
-                label6.text = "X"
-                label6.textColor = .red
-                label6.textAlignment = .center
-                klick = false
-            }else {
-                label6.text = "O"
-                label6.textColor = .blue
-                label6.textAlignment = .center
-                klick = true
+            if label6.text == "" {
+                if klick {
+                    label6.text = "X"
+                    label6.textColor = .red
+                    label6.textAlignment = .center
+                    klick = false
+                }else {
+                    label6.text = "O"
+                    label6.textColor = .blue
+                    label6.textAlignment = .center
+                    klick = true
+                }
             }
         } else if sender == button7label {
-            if klick {
-                label7.text = "X"
-                label7.textColor = .red
-                label7.textAlignment = .center
-                klick = false
-            }else {
-                label7.text = "O"
-                label7.textColor = .blue
-                label7.textAlignment = .center
-                klick = true
+            if label7.text == "" {
+                if klick {
+                    label7.text = "X"
+                    label7.textColor = .red
+                    label7.textAlignment = .center
+                    klick = false
+                }else {
+                    label7.text = "O"
+                    label7.textColor = .blue
+                    label7.textAlignment = .center
+                    klick = true
+                }
             }
         } else if sender == button8label {
-            if klick {
-                label8.text = "X"
-                label8.textColor = .red
-                label8.textAlignment = .center
-                klick = false
-            }else {
-                label8.text = "O"
-                label8.textColor = .blue
-                label8.textAlignment = .center
-                klick = true
+            if label8.text == "" {
+                if klick {
+                    label8.text = "X"
+                    label8.textColor = .red
+                    label8.textAlignment = .center
+                    klick = false
+                }else {
+                    label8.text = "O"
+                    label8.textColor = .blue
+                    label8.textAlignment = .center
+                    klick = true
+                }
             }
         } else if sender == button9label {
-            if klick {
-                label9.text = "X"
-                label9.textColor = .red
-                label9.textAlignment = .center
-                klick = false
-            }else {
-                label9.text = "O"
-                label9.textColor = .blue
-                label9.textAlignment = .center
-                klick = true
+            if label9.text == "" {
+                if klick {
+                    label9.text = "X"
+                    label9.textColor = .red
+                    label9.textAlignment = .center
+                    klick = false
+                }else {
+                    label9.text = "O"
+                    label9.textColor = .blue
+                    label9.textAlignment = .center
+                    klick = true
+                }
             }
         }
+        
         updatelabel()
     }
         
@@ -220,7 +239,7 @@ class ViewController: UIViewController {
         imagechanger.image = UIImage(named: "IMG_FEA8BF72405C-1")
     }
     @IBAction func `in`(_ sender: UIButton) {
-        imagechanger.image = UIImage(named: "IMG_0830")
+        imagechanger.image = UIImage(named: "IMG_93FEEC47152D-1")
     }
     
 }
