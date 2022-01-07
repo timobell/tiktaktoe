@@ -194,7 +194,4 @@ class ViewController: UIViewController {
     @IBAction func obutton(_ sender: UIButton) {
         klick = false
     }
-    
-
 }
-
