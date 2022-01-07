@@ -207,5 +207,14 @@ class ViewController: UIViewController {
     @IBAction func kurve(_ sender: UIButton) {
         imagechanger.image = UIImage(named: "IMG_6902D9831170-1")
     }
+    @IBAction func kreis(_ sender: UIButton) {
+        imagechanger.image = UIImage(named: "IMG_A4F2437CF520-1")
+    }
+    @IBAction func wierd(_ sender: UIButton) {
+        imagechanger.image = UIImage(named: "IMG_FEA8BF72405C-1")
+    }
+    @IBAction func `in`(_ sender: UIButton) {
+        imagechanger.image = UIImage(named: "IMG_0830")
+    }
     
 }
