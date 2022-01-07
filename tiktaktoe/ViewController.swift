@@ -56,7 +56,7 @@ class ViewController: UIViewController {
         tttlabel.text = "TikTakToe"
         tttlabel.textColor = .black
         tttlabel.textAlignment = .center
-        button1label.setTitle( "", for: .normal)
+        button1label.setTitle("", for: .normal)
         button2label.setTitle("", for: .normal)
         button3label.setTitle("", for: .normal)
         button4label.setTitle("", for: .normal)
