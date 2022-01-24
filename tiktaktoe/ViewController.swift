@@ -88,6 +88,8 @@ class ViewController: UIViewController {
         buttonO.setTitle("", for: .normal)
     }
     
+// Tippen //
+    
     @IBAction func buttonklick(_ sender: UIButton) {
         if sender == button1label {
             if label1.text == "" {
@@ -226,6 +228,9 @@ class ViewController: UIViewController {
             }
         }
         updatelabel()
+        
+// Gewinnprüfung //
+        
         if label1.text == "X" , label2.text == "X" , label3.text == "X" {
             er2.text = "X"
             er2.textColor = .red
@@ -467,7 +472,9 @@ class ViewController: UIViewController {
             label9.text = ""
         }
     }
-
+    
+// Reset Knopf //
+    
     @IBAction func reset(_ sender: UIButton) {
         klick = true
         label1.text = ""
@@ -482,19 +489,22 @@ class ViewController: UIViewController {
         erklärungstext.text = ""
         er2.text = ""
     }
+    
+// Auswählen mit was man anfangen möchte //
+    
     @IBAction func xbutton(_ sender: UIButton) {
         if letzterbutton == 0 {
            klick = true
         }
-                
     }
-    
     @IBAction func obutton(_ sender: UIButton) {
         if letzterbutton == 0 {
             klick = false
         }
     }
-
+    
+// Aussehen des Spielfeldes //
+    
     @IBAction func normal(_ sender: UIButton) {
         imagechanger.image = UIImage(named: "IMG_436FE5991425-1")
     }
@@ -513,5 +523,4 @@ class ViewController: UIViewController {
     @IBAction func styleButtonIn(_ sender: UIButton) {
         imagechanger.image = UIImage(named: "IMG_93FEEC47152D-1")
     }
-    
 }
