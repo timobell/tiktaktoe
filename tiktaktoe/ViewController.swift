@@ -46,6 +46,7 @@ class ViewController: UIViewController {
     var imagek = true
     var letzterbutton = 0
     var last = 10
+    
     func updatelabel() {
         if klick {
             erklärungstext.text = "ist am Zug"
@@ -59,6 +60,7 @@ class ViewController: UIViewController {
             er2.textColor = .blue
         }
     }
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -80,6 +82,10 @@ class ViewController: UIViewController {
         labelx.text = "X"
         labelx.textColor = .red
         labelx.textAlignment = .center
+        er2.text = ""
+        erklärungstext.text = ""
+        buttonx.setTitle("", for: .normal)
+        buttonO.setTitle("", for: .normal)
     }
     
     @IBAction func buttonklick(_ sender: UIButton) {
@@ -219,10 +225,249 @@ class ViewController: UIViewController {
                 letzterbutton = 9
             }
         }
-        
         updatelabel()
+        if label1.text == "X" , label2.text == "X" , label3.text == "X" {
+            er2.text = "X"
+            er2.textColor = .red
+            erklärungstext.text = "Wins"
+            klick = true
+            label1.text = ""
+            label2.text = ""
+            label3.text = ""
+            label4.text = ""
+            label5.text = ""
+            label6.text = ""
+            label7.text = ""
+            label8.text = ""
+            label9.text = ""
+        }
+        if label4.text == "X" , label5.text == "X" , label6.text == "X" {
+            er2.text = "X"
+            er2.textColor = .red
+            erklärungstext.text = "Wins"
+            klick = true
+            label1.text = ""
+            label2.text = ""
+            label3.text = ""
+            label4.text = ""
+            label5.text = ""
+            label6.text = ""
+            label7.text = ""
+            label8.text = ""
+            label9.text = ""
+        }
+        if label7.text == "X" , label8.text == "X" , label9.text == "X" {
+            er2.text = "X"
+            er2.textColor = .red
+            erklärungstext.text = "Wins"
+            klick = true
+            label1.text = ""
+            label2.text = ""
+            label3.text = ""
+            label4.text = ""
+            label5.text = ""
+            label6.text = ""
+            label7.text = ""
+            label8.text = ""
+            label9.text = ""
+        }
+        if label1.text == "X" , label4.text == "X" , label7.text == "X" {
+            er2.text = "X"
+            er2.textColor = .red
+            erklärungstext.text = "Wins"
+            klick = true
+            label1.text = ""
+            label2.text = ""
+            label3.text = ""
+            label4.text = ""
+            label5.text = ""
+            label6.text = ""
+            label7.text = ""
+            label8.text = ""
+            label9.text = ""
+        }
+        if label2.text == "X" , label5.text == "X" , label8.text == "X" {
+            er2.text = "X"
+            er2.textColor = .red
+            erklärungstext.text = "Wins"
+            klick = true
+            label1.text = ""
+            label2.text = ""
+            label3.text = ""
+            label4.text = ""
+            label5.text = ""
+            label6.text = ""
+            label7.text = ""
+            label8.text = ""
+            label9.text = ""
+        }
+        if label3.text == "X" , label6.text == "X" , label9.text == "X" {
+            er2.text = "X"
+            er2.textColor = .red
+            erklärungstext.text = "Wins"
+            klick = true
+            label1.text = ""
+            label2.text = ""
+            label3.text = ""
+            label4.text = ""
+            label5.text = ""
+            label6.text = ""
+            label7.text = ""
+            label8.text = ""
+            label9.text = ""
+        }
+        if label1.text == "X" , label5.text == "X" , label9.text == "X" {
+            er2.text = "X"
+            er2.textColor = .red
+            erklärungstext.text = "Wins"
+            klick = true
+            label1.text = ""
+            label2.text = ""
+            label3.text = ""
+            label4.text = ""
+            label5.text = ""
+            label6.text = ""
+            label7.text = ""
+            label8.text = ""
+            label9.text = ""
+        }
+        if label3.text == "X" , label5.text == "X" , label7.text == "X" {
+            er2.text = "X"
+            er2.textColor = .red
+            erklärungstext.text = "Wins"
+            klick = true
+            label1.text = ""
+            label2.text = ""
+            label3.text = ""
+            label4.text = ""
+            label5.text = ""
+            label6.text = ""
+            label7.text = ""
+            label8.text = ""
+            label9.text = ""
+        }
+        if label1.text == "O" , label2.text == "O" , label3.text == "O" {
+            er2.text = "O"
+            er2.textColor = .blue
+            erklärungstext.text = "Wins"
+            klick = true
+            label1.text = ""
+            label2.text = ""
+            label3.text = ""
+            label4.text = ""
+            label5.text = ""
+            label6.text = ""
+            label7.text = ""
+            label8.text = ""
+            label9.text = ""
+        }
+        if label4.text == "O" , label5.text == "O" , label6.text == "O" {
+            er2.text = "O"
+            er2.textColor = .blue
+            erklärungstext.text = "Wins"
+            klick = true
+            label1.text = ""
+            label2.text = ""
+            label3.text = ""
+            label4.text = ""
+            label5.text = ""
+            label6.text = ""
+            label7.text = ""
+            label8.text = ""
+            label9.text = ""
+        }
+        if label7.text == "O" , label8.text == "O" , label9.text == "O" {
+            er2.text = "O"
+            er2.textColor = .blue
+            erklärungstext.text = "Wins"
+            klick = true
+            label1.text = ""
+            label2.text = ""
+            label3.text = ""
+            label4.text = ""
+            label5.text = ""
+            label6.text = ""
+            label7.text = ""
+            label8.text = ""
+            label9.text = ""
+        }
+        if label1.text == "O" , label4.text == "O" , label7.text == "O" {
+            er2.text = "O"
+            er2.textColor = .blue
+            erklärungstext.text = "Wins"
+            klick = true
+            label1.text = ""
+            label2.text = ""
+            label3.text = ""
+            label4.text = ""
+            label5.text = ""
+            label6.text = ""
+            label7.text = ""
+            label8.text = ""
+            label9.text = ""
+        }
+        if label2.text == "O" , label5.text == "O" , label8.text == "O" {
+            er2.text = "O"
+            er2.textColor = .blue
+            erklärungstext.text = "Wins"
+            klick = true
+            label1.text = ""
+            label2.text = ""
+            label3.text = ""
+            label4.text = ""
+            label5.text = ""
+            label6.text = ""
+            label7.text = ""
+            label8.text = ""
+            label9.text = ""
+        }
+        if label3.text == "O" , label6.text == "O" , label9.text == "O" {
+            er2.text = "O"
+            er2.textColor = .blue
+            erklärungstext.text = "Wins"
+            klick = true
+            label1.text = ""
+            label2.text = ""
+            label3.text = ""
+            label4.text = ""
+            label5.text = ""
+            label6.text = ""
+            label7.text = ""
+            label8.text = ""
+            label9.text = ""
+        }
+        if label1.text == "O" , label5.text == "O" , label9.text == "O" {
+            er2.text = "O"
+            er2.textColor = .blue
+            erklärungstext.text = "Wins"
+            klick = true
+            label1.text = ""
+            label2.text = ""
+            label3.text = ""
+            label4.text = ""
+            label5.text = ""
+            label6.text = ""
+            label7.text = ""
+            label8.text = ""
+            label9.text = ""
+        }
+        if label3.text == "O" , label5.text == "O" , label7.text == "O" {
+            er2.text = "O"
+            er2.textColor = .blue
+            erklärungstext.text = "Wins"
+            klick = true
+            label1.text = ""
+            label2.text = ""
+            label3.text = ""
+            label4.text = ""
+            label5.text = ""
+            label6.text = ""
+            label7.text = ""
+            label8.text = ""
+            label9.text = ""
+        }
     }
-        
+
     @IBAction func reset(_ sender: UIButton) {
         klick = true
         label1.text = ""
@@ -236,69 +481,17 @@ class ViewController: UIViewController {
         label9.text = ""
         erklärungstext.text = ""
         er2.text = ""
-        last = 10
-        labelo.text = "O"
-        labelo.textColor = .blue
-        labelo.textAlignment = .center
-        labelx.text = "X"
-        labelx.textColor = .red
-        labelx.textAlignment = .center
     }
-    @IBAction func zurück(_ sender: UIButton) {
-        if letzterbutton == 1 {
-            label1.text = ""
-        }
-        if letzterbutton == 2 {
-            label2.text = ""
-        }
-        if letzterbutton == 3 {
-            label3.text = ""
-        }
-        if letzterbutton == 4 {
-            label4.text = ""
-        }
-        if letzterbutton == 5 {
-            label5.text = ""
-        }
-        if letzterbutton == 6 {
-            label6.text = ""
-        }
-        if letzterbutton == 7 {
-            label7.text = ""
-        }
-        if letzterbutton == 8 {
-            label8.text = ""
-        }
-        if letzterbutton == 9 {
-            label9.text = ""
-        }
-        if letzterbutton != 0 {
-            if klick {
-                klick = false
-            } else {
-                klick = true
-            }
-            letzterbutton = 0
-            updatelabel()
-        }
-        
-    }
-    
     @IBAction func xbutton(_ sender: UIButton) {
-        if last == 10 {
-            klick = true
-            last = 0
-            buttonx.setTitle("", for: .normal)
-            buttonO.setTitle("", for: .normal)
+        if letzterbutton == 0 {
+           klick = true
         }
+                
     }
     
     @IBAction func obutton(_ sender: UIButton) {
-        if last == 10 {
+        if letzterbutton == 0 {
             klick = false
-            last = 0
-            buttonx.setTitle("", for: .normal)
-            buttonO.setTitle("", for: .normal)
         }
     }
 
