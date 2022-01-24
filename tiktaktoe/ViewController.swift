@@ -8,6 +8,7 @@
 import UIKit
 
 class ViewController: UIViewController {
+// Buttons im Feld //
     @IBOutlet weak var tttlabel: UILabel!
     @IBOutlet weak var button1label: UIButton!
     @IBOutlet weak var button2label: UIButton!
@@ -18,11 +19,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var button7label: UIButton!
     @IBOutlet weak var button8label: UIButton!
     @IBOutlet weak var button9label: UIButton!
-    
+// Buttons zum wechseln des Starts //
     @IBOutlet weak var buttonx: UIButton!
     @IBOutlet weak var buttonO: UIButton!
-    
-    
+// Label im Feld //
     @IBOutlet weak var label1: UILabel!
     @IBOutlet weak var label2: UILabel!
     @IBOutlet weak var label3: UILabel!
@@ -32,12 +32,12 @@ class ViewController: UIViewController {
     @IBOutlet weak var label7: UILabel!
     @IBOutlet weak var label8: UILabel!
     @IBOutlet weak var label9: UILabel!
-    
+// Label zum zeigen wer am zug ist //
     @IBOutlet weak var erklärungstext: UILabel!
     @IBOutlet weak var er2: UILabel!
-    
+// Aussehen vom Feld //
     @IBOutlet weak var imagechanger: UIImageView!
-    
+// Label zum sehen zu was man beim start wechseln kann //
     @IBOutlet weak var labelo: UILabel!
     @IBOutlet weak var labelx: UILabel!
     
@@ -60,7 +60,18 @@ class ViewController: UIViewController {
             er2.textColor = .blue
         }
     }
-
+    func labelN() {
+        klick = true
+        label1.text = ""
+        label2.text = ""
+        label3.text = ""
+        label4.text = ""
+        label5.text = ""
+        label6.text = ""
+        label7.text = ""
+        label8.text = ""
+        label9.text = ""
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -235,257 +246,105 @@ class ViewController: UIViewController {
             er2.text = "X"
             er2.textColor = .red
             erklärungstext.text = "Wins"
-            klick = true
-            label1.text = ""
-            label2.text = ""
-            label3.text = ""
-            label4.text = ""
-            label5.text = ""
-            label6.text = ""
-            label7.text = ""
-            label8.text = ""
-            label9.text = ""
+            labelN()
         }
         if label4.text == "X" , label5.text == "X" , label6.text == "X" {
             er2.text = "X"
             er2.textColor = .red
             erklärungstext.text = "Wins"
-            klick = true
-            label1.text = ""
-            label2.text = ""
-            label3.text = ""
-            label4.text = ""
-            label5.text = ""
-            label6.text = ""
-            label7.text = ""
-            label8.text = ""
-            label9.text = ""
+            labelN()
         }
         if label7.text == "X" , label8.text == "X" , label9.text == "X" {
             er2.text = "X"
             er2.textColor = .red
             erklärungstext.text = "Wins"
-            klick = true
-            label1.text = ""
-            label2.text = ""
-            label3.text = ""
-            label4.text = ""
-            label5.text = ""
-            label6.text = ""
-            label7.text = ""
-            label8.text = ""
-            label9.text = ""
+            labelN()
         }
         if label1.text == "X" , label4.text == "X" , label7.text == "X" {
             er2.text = "X"
             er2.textColor = .red
             erklärungstext.text = "Wins"
-            klick = true
-            label1.text = ""
-            label2.text = ""
-            label3.text = ""
-            label4.text = ""
-            label5.text = ""
-            label6.text = ""
-            label7.text = ""
-            label8.text = ""
-            label9.text = ""
+            labelN()
         }
         if label2.text == "X" , label5.text == "X" , label8.text == "X" {
             er2.text = "X"
             er2.textColor = .red
             erklärungstext.text = "Wins"
             klick = true
-            label1.text = ""
-            label2.text = ""
-            label3.text = ""
-            label4.text = ""
-            label5.text = ""
-            label6.text = ""
-            label7.text = ""
-            label8.text = ""
-            label9.text = ""
+            labelN()
         }
         if label3.text == "X" , label6.text == "X" , label9.text == "X" {
             er2.text = "X"
             er2.textColor = .red
             erklärungstext.text = "Wins"
-            klick = true
-            label1.text = ""
-            label2.text = ""
-            label3.text = ""
-            label4.text = ""
-            label5.text = ""
-            label6.text = ""
-            label7.text = ""
-            label8.text = ""
-            label9.text = ""
+            labelN()
         }
         if label1.text == "X" , label5.text == "X" , label9.text == "X" {
             er2.text = "X"
             er2.textColor = .red
             erklärungstext.text = "Wins"
-            klick = true
-            label1.text = ""
-            label2.text = ""
-            label3.text = ""
-            label4.text = ""
-            label5.text = ""
-            label6.text = ""
-            label7.text = ""
-            label8.text = ""
-            label9.text = ""
+            labelN()
         }
         if label3.text == "X" , label5.text == "X" , label7.text == "X" {
             er2.text = "X"
             er2.textColor = .red
             erklärungstext.text = "Wins"
-            klick = true
-            label1.text = ""
-            label2.text = ""
-            label3.text = ""
-            label4.text = ""
-            label5.text = ""
-            label6.text = ""
-            label7.text = ""
-            label8.text = ""
-            label9.text = ""
+            labelN()
         }
         if label1.text == "O" , label2.text == "O" , label3.text == "O" {
             er2.text = "O"
             er2.textColor = .blue
             erklärungstext.text = "Wins"
-            klick = true
-            label1.text = ""
-            label2.text = ""
-            label3.text = ""
-            label4.text = ""
-            label5.text = ""
-            label6.text = ""
-            label7.text = ""
-            label8.text = ""
-            label9.text = ""
+            labelN()
         }
         if label4.text == "O" , label5.text == "O" , label6.text == "O" {
             er2.text = "O"
             er2.textColor = .blue
             erklärungstext.text = "Wins"
-            klick = true
-            label1.text = ""
-            label2.text = ""
-            label3.text = ""
-            label4.text = ""
-            label5.text = ""
-            label6.text = ""
-            label7.text = ""
-            label8.text = ""
-            label9.text = ""
+            labelN()
         }
         if label7.text == "O" , label8.text == "O" , label9.text == "O" {
             er2.text = "O"
             er2.textColor = .blue
             erklärungstext.text = "Wins"
-            klick = true
-            label1.text = ""
-            label2.text = ""
-            label3.text = ""
-            label4.text = ""
-            label5.text = ""
-            label6.text = ""
-            label7.text = ""
-            label8.text = ""
-            label9.text = ""
+            labelN()
         }
         if label1.text == "O" , label4.text == "O" , label7.text == "O" {
             er2.text = "O"
             er2.textColor = .blue
             erklärungstext.text = "Wins"
-            klick = true
-            label1.text = ""
-            label2.text = ""
-            label3.text = ""
-            label4.text = ""
-            label5.text = ""
-            label6.text = ""
-            label7.text = ""
-            label8.text = ""
-            label9.text = ""
+            labelN()
         }
         if label2.text == "O" , label5.text == "O" , label8.text == "O" {
             er2.text = "O"
             er2.textColor = .blue
             erklärungstext.text = "Wins"
-            klick = true
-            label1.text = ""
-            label2.text = ""
-            label3.text = ""
-            label4.text = ""
-            label5.text = ""
-            label6.text = ""
-            label7.text = ""
-            label8.text = ""
-            label9.text = ""
+            labelN()
         }
         if label3.text == "O" , label6.text == "O" , label9.text == "O" {
             er2.text = "O"
             er2.textColor = .blue
             erklärungstext.text = "Wins"
-            klick = true
-            label1.text = ""
-            label2.text = ""
-            label3.text = ""
-            label4.text = ""
-            label5.text = ""
-            label6.text = ""
-            label7.text = ""
-            label8.text = ""
-            label9.text = ""
+            labelN()
         }
         if label1.text == "O" , label5.text == "O" , label9.text == "O" {
             er2.text = "O"
             er2.textColor = .blue
             erklärungstext.text = "Wins"
-            klick = true
-            label1.text = ""
-            label2.text = ""
-            label3.text = ""
-            label4.text = ""
-            label5.text = ""
-            label6.text = ""
-            label7.text = ""
-            label8.text = ""
-            label9.text = ""
+            labelN()
         }
         if label3.text == "O" , label5.text == "O" , label7.text == "O" {
             er2.text = "O"
             er2.textColor = .blue
             erklärungstext.text = "Wins"
-            klick = true
-            label1.text = ""
-            label2.text = ""
-            label3.text = ""
-            label4.text = ""
-            label5.text = ""
-            label6.text = ""
-            label7.text = ""
-            label8.text = ""
-            label9.text = ""
+            labelN()
         }
     }
     
 // Reset Knopf //
     
     @IBAction func reset(_ sender: UIButton) {
-        klick = true
-        label1.text = ""
-        label2.text = ""
-        label3.text = ""
-        label4.text = ""
-        label5.text = ""
-        label6.text = ""
-        label7.text = ""
-        label8.text = ""
-        label9.text = ""
+        labelN()
         erklärungstext.text = ""
         er2.text = ""
     }
