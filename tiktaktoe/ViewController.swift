@@ -8,7 +8,9 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
 // Buttons im Feld //
+    
     @IBOutlet weak var tttlabel: UILabel!
     @IBOutlet weak var button1label: UIButton!
     @IBOutlet weak var button2label: UIButton!
@@ -19,10 +21,14 @@ class ViewController: UIViewController {
     @IBOutlet weak var button7label: UIButton!
     @IBOutlet weak var button8label: UIButton!
     @IBOutlet weak var button9label: UIButton!
+    
 // Buttons zum wechseln des Starts //
+    
     @IBOutlet weak var buttonx: UIButton!
     @IBOutlet weak var buttonO: UIButton!
+    
 // Label im Feld //
+    
     @IBOutlet weak var label1: UILabel!
     @IBOutlet weak var label2: UILabel!
     @IBOutlet weak var label3: UILabel!
@@ -32,12 +38,18 @@ class ViewController: UIViewController {
     @IBOutlet weak var label7: UILabel!
     @IBOutlet weak var label8: UILabel!
     @IBOutlet weak var label9: UILabel!
+    
 // Label zum zeigen wer am zug ist //
+    
     @IBOutlet weak var erklärungstext: UILabel!
     @IBOutlet weak var er2: UILabel!
+    
 // Aussehen vom Feld //
+    
     @IBOutlet weak var imagechanger: UIImageView!
+    
 // Label zum sehen zu was man beim start wechseln kann //
+    
     @IBOutlet weak var labelo: UILabel!
     @IBOutlet weak var labelx: UILabel!
     
@@ -58,19 +70,6 @@ class ViewController: UIViewController {
             erklärungstext.textColor = .black
             er2.text = "O"
             er2.textColor = .blue
-        }
-    }
-    func tippenV() {
-        if klick {
-            label3.text = "X"
-            label3.textColor = .red
-            label3.textAlignment = .center
-            klick = false
-        }else {
-            label3.text = "O"
-            label3.textColor = .blue
-            label3.textAlignment = .center
-            klick = true
         }
     }
     func labelN() {
@@ -127,47 +126,137 @@ class ViewController: UIViewController {
     @IBAction func buttonklick(_ sender: UIButton) {
         if sender == button1label {
             if label1.text == "" {
-                tippenV()
+                if klick {
+                    label1.text = "X"
+                    label1.textColor = .red
+                    label1.textAlignment = .center
+                    klick = false
+                }else {
+                    label1.text = "O"
+                    label1.textColor = .blue
+                    label1.textAlignment = .center
+                    klick = true
+                }
                 letzterbutton = 1
             }
         } else if sender == button2label {
             if label2.text == "" {
-                tippenV()
+                if klick {
+                        label2.text = "X"
+                        label2.textColor = .red
+                        label2.textAlignment = .center
+                        klick = false
+                    }else {
+                        label2.text = "O"
+                        label2.textColor = .blue
+                        label2.textAlignment = .center
+                        klick = true
+                }
                 letzterbutton = 2
             }
         } else if sender == button3label {
             if label3.text == "" {
-                tippenV()
+                if klick {
+                    label3.text = "X"
+                    label3.textColor = .red
+                    label3.textAlignment = .center
+                    klick = false
+                }else {
+                    label3.text = "O"
+                    label3.textColor = .blue
+                    label3.textAlignment = .center
+                    klick = true
+                }
                 letzterbutton = 3
             }
         } else if sender == button4label{
             if label4.text == "" {
-                tippenV()
+                if klick {
+                    label4.text = "X"
+                    label4.textColor = .red
+                    label4.textAlignment = .center
+                    klick = false
+                }else {
+                    label4.text = "O"
+                    label4.textColor = .blue
+                    label4.textAlignment = .center
+                    klick = true
+                }
                 letzterbutton = 4
             }
         } else if sender == button5label {
             if label5.text == "" {
-                tippenV()
+                if klick {
+                    label5.text = "X"
+                    label5.textColor = .red
+                    label5.textAlignment = .center
+                    klick = false
+                }else {
+                    label5.text = "O"
+                    label5.textColor = .blue
+                    label5.textAlignment = .center
+                    klick = true
+                }
                 letzterbutton = 5
             }
         } else if sender == button6label {
             if label6.text == "" {
-                tippenV()
+                if klick {
+                    label6.text = "X"
+                    label6.textColor = .red
+                    label6.textAlignment = .center
+                    klick = false
+                }else {
+                    label6.text = "O"
+                    label6.textColor = .blue
+                    label6.textAlignment = .center
+                    klick = true
+                }
                 letzterbutton = 6
             }
         } else if sender == button7label {
             if label7.text == "" {
-                tippenV()
+                if klick {
+                    label7.text = "X"
+                    label7.textColor = .red
+                    label7.textAlignment = .center
+                    klick = false
+                }else {
+                    label7.text = "O"
+                    label7.textColor = .blue
+                    label7.textAlignment = .center
+                    klick = true
+                }
                 letzterbutton = 7
             }
         } else if sender == button8label {
             if label8.text == "" {
-                tippenV()
+                if klick {
+                    label8.text = "X"
+                    label8.textColor = .red
+                    label8.textAlignment = .center
+                    klick = false
+                }else {
+                    label8.text = "O"
+                    label8.textColor = .blue
+                    label8.textAlignment = .center
+                    klick = true
+                }
                 letzterbutton = 8
             }
         } else if sender == button9label {
             if label9.text == "" {
-                tippenV()
+                if klick {
+                    label9.text = "X"
+                    label9.textColor = .red
+                    label9.textAlignment = .center
+                    klick = false
+                }else {
+                    label9.text = "O"
+                    label9.textColor = .blue
+                    label9.textAlignment = .center
+                    klick = true
+                }
                 letzterbutton = 9
             }
         }
@@ -193,6 +282,7 @@ class ViewController: UIViewController {
         }
         if label2.text == "X" , label5.text == "X" , label8.text == "X" {
             Xwins()
+            klick = true
             labelN()
         }
         if label3.text == "X" , label6.text == "X" , label9.text == "X" {
@@ -208,9 +298,7 @@ class ViewController: UIViewController {
             labelN()
         }
         if label1.text == "O" , label2.text == "O" , label3.text == "O" {
-            er2.text = "O"
-            er2.textColor = .blue
-            erklärungstext.text = "Wins"
+            Owins()
             labelN()
         }
         if label4.text == "O" , label5.text == "O" , label6.text == "O" {
