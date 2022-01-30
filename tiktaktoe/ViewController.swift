@@ -47,6 +47,8 @@ class ViewController: UIViewController {
 // Aussehen vom Feld //
     
     @IBOutlet weak var imagechanger: UIImageView!
+    @IBOutlet weak var Rainbow: UILabel!
+    
     
 // Label zum sehen zu was man beim start wechseln kann //
     
@@ -119,6 +121,8 @@ class ViewController: UIViewController {
         erklärungstext.text = ""
         buttonx.setTitle("", for: .normal)
         buttonO.setTitle("", for: .normal)
+        Rainbow.text = "Rainbow"
+        Rainbow.textColor = .black
     }
     
 // Tippen //
