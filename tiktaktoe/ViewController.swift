@@ -97,7 +97,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        tttlabel.text = "TikTakToe"
+        tttlabel.text = "TicTacToe"
         tttlabel.textColor = .black
         tttlabel.textAlignment = .center
         button1label.setTitle("", for: .normal)
