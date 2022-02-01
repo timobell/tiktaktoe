@@ -47,8 +47,6 @@ class ViewController: UIViewController {
 // Aussehen vom Feld //
     
     @IBOutlet weak var imagechanger: UIImageView!
-    @IBOutlet weak var Rainbow: UILabel!
-    
     
 // Label zum sehen zu was man beim start wechseln kann //
     
@@ -99,7 +97,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        tttlabel.text = "TicTacToe"
+        tttlabel.text = "TikTakToe"
         tttlabel.textColor = .black
         tttlabel.textAlignment = .center
         button1label.setTitle("", for: .normal)
@@ -121,8 +119,6 @@ class ViewController: UIViewController {
         erklärungstext.text = ""
         buttonx.setTitle("", for: .normal)
         buttonO.setTitle("", for: .normal)
-        Rainbow.text = "Rainbow"
-        Rainbow.textColor = .black
     }
     
 // Tippen //
@@ -341,6 +337,7 @@ class ViewController: UIViewController {
         labelN()
         erklärungstext.text = ""
         er2.text = ""
+        letzterbutton = 0
     }
     
 // Auswählen mit was man anfangen möchte //
